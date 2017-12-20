@@ -1,0 +1,157 @@
+/*Body*/
+body {
+	background-color: #C84135;
+	font-size: 25px;
+}
+
+/*Nav*/
+main {
+        position: fixed;
+        z-index: 2;
+        width: 300px;
+        height: 100vh;
+        background: rgba(170,45,34, 0.95);
+        text-align: center;
+}
+    main > * {
+        display: block;
+        margin: 30px 0px;
+        color: white;
+    }
+    #logo > * {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0px 8px;
+        font-size: 12px;
+        letter-spacing: 4px;
+        text-align: left;
+        text-decoration: none;
+    }
+    div#bcpic {
+        transition: 0.25s linear;
+    }
+    div#bcpic:hover {
+        transform: scale(1.5,1.5);
+    }
+    img#kao {
+        z-index: 2;
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
+        animation: face 5s linear infinite;
+        transition: 0.25s linear;
+    }
+    @keyframes face {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    #bc p {
+        margin: 2px 0px;
+    }
+    #logo_slash {
+        margin: 0 -10px;
+    }
+    #bc p span,#logo_shin span {
+        color: white;
+        font-weight: 600;
+        transition: 0.3s ease-in-out;
+    }
+
+    nav > * {
+    	text-decoration: none;
+    	color: white;
+    	display: block;
+    	margin: 20px 0;
+    }
+    div#instruction {
+        font-size: 10px;
+    }
+
+		footer {
+   		position: absolute;
+   		left: 50%;
+   		bottom: 10px;
+   		font-size: 15px;
+   		font-family: "Baskerville";
+   		color: white;
+   	}
+
+
+/*Article*/
+article {
+		position: fixed;
+		z-index: 1;
+		right: 30px;
+		left: 360px;
+		height: 100vh;
+		text-align: center;
+		overflow: scroll;
+		font-size: 25px;
+		color: white;
+		font-family: "Baskerville";
+        /*Blink Animation*/
+        animation-play-state: initial opacity 100px;
+        animation-duration: 200ms;
+        animation-name: blink;
+        animation-iteration-count: 6;
+        animation-direction: alternate;
+}
+	@keyframes blink {
+    from {
+        opacity: 1;
+        color: purple;
+    }
+    to {
+        opacity: 0;
+        background: yellow;
+    }
+}
+	article #shinzo {
+		z-index: 3;
+		text-align: left;
+		position: absolute;
+		display: block;
+		margin: 25px 0px;
+		transition: 0.5s ease;
+		animation: beat 1.77s linear infinite;
+}
+	@keyframes beat {
+		50% {
+			transform: scale(1.5);
+		}
+	}
+
+	article .title {
+		font-size: 50px;
+		font-weight: bold;
+	}
+	article .title span {
+		color: hotpink;
+	}
+	article .message {
+		font-size: 25px;
+	}
+	article .blur span{
+		font-size: 25px;
+		text-shadow: 0 0 20px rgba(255,255,255, 0.5);
+		color: transparent;
+		transition: 0.25s linear;
+	}
+	article .blur span:hover {
+		text-decoration: none;
+		font-size: 100px;
+		color: white;
+	}
+	article .link {
+		text-decoration: none;
+		color: white;
+		font-size: 25px;
+	}
+	article .here {
+		text-decoration: underline;
+	}
+	article .another {
+		text-decoration: underline;
+		color: red;
+	}
